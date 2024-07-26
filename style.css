@@ -1,0 +1,151 @@
+@font-face {
+    font-family: 'AdiHaus';
+    src: URL('https://assets.codepen.io/6060109/adihaus_regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "AdiHaus";
+    src: url("https://assets.codepen.io/6060109/adihaus_bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+  }
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body, html{
+min-width: 100%;
+min-height: 100vh;
+}
+
+body{
+    display: flex;
+}
+
+.mobile-image{
+    max-width:500px;
+    margin:0 auto;
+}
+
+#brand-logo{
+    display:block;
+    margin:15px auto;
+}
+
+#athlete-mobile{
+    height:250px;
+    width:100%;
+    background:url(images/athlete-girl.webp) no-repeat right top;
+    background-size: cover;
+}
+
+.all-content{
+    font-family: AdiHaus;
+    text-align: center;
+    padding: 20px 30px;
+}
+
+.text-container{
+    width: 100%;
+    text-align: center;
+
+}
+
+h2{
+    margin: 0;
+    font-size: 48px;
+    letter-spacing: 5px;
+}
+
+h2:nth-child(1){
+    color: #CD3A24;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+h2:nth-child(2){
+    color: #423A3A;
+    margin-top: 5px;
+}
+
+p{
+    color: #333333;
+    line-height: 28px;
+    margin: 10 0 40;
+    margin-bottom: 30px;
+
+}
+
+form{
+    display: flex;
+}
+
+input[type="text"]{
+    height: 50px;
+    width: 75%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+input[type="submit"]{
+    width: 20%;
+    height: 50px;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: #333333;
+    transition: .4s ease all;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover{
+    transition: .4s ease all;
+    cursor: pointer;
+}
+
+.desktop-image{
+    display: none;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+body{
+    background:url(images/destop-bg.png);
+    background-size: cover;
+}
+
+.mobile-image{
+    width:50%;
+
+}
+
+#athlete-mobile{
+    display:none;
+}
+
+#brand-logo{
+    display: block;
+    margin:30px 30px 100px;
+}
+
+.text-container{
+    text-align:left;
+}
+
+.desktop-image{
+    display:block;
+    width:50%;
+    background:url(images/athlete-big.webp);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 35% 100%);
+    background-size: cover;
+}
+
+h2{
+    font-size: 64px;
+}
+
+}
