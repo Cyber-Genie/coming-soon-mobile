@@ -36,11 +36,11 @@ body{
     margin:15px auto;
 }
 
-#athlete-mobile{
+#shoe-mobile{
     height:250px;
     width:100%;
-    background:url(images/athlete-girl.webp) no-repeat right top;
-    background-size: cover;
+    background:center url(images/mobile-shoes.jpg) no-repeat;
+    background-size:contain;
 }
 
 .all-content{
@@ -62,7 +62,7 @@ h2{
 }
 
 h2:nth-child(1){
-    color: #CD3A24;
+    color: #2F80ED;
     font-weight: 400;
     margin-top: 20px;
 }
@@ -76,7 +76,8 @@ p{
     color: #333333;
     line-height: 28px;
     margin: 10 0 40;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    margin-top:10px ;
 
 }
 
@@ -85,20 +86,25 @@ form{
 }
 
 input[type="text"]{
-    height: 50px;
+    height: 60px;
     width: 75%;
     padding: 0 20px;
     box-sizing: border-box;
 }
 
 input[type="submit"]{
-    width: 20%;
-    height: 50px;
+    width: 25%;
+    height: 60px;
     box-sizing: border-box;
     color: #fff;
-    background-color: #333333;
+    background:linear-gradient(166deg, rgba(124,124,124,1) 0%, rgba(43,40,40,1) 100%);
     transition: .4s ease all;
-    border-radius: 5px;
+    border-radius: 3px;
+    margin-left: -10px;
+    font-family: a;
+    font-size: 35px;
+    font-weight: 400;
+    padding-right: -40px;
 }
 
 input[type="submit"]:hover{
@@ -114,7 +120,7 @@ input[type="submit"]:hover{
 @media only screen and (min-width: 768px) {
 
 body{
-    background:url(images/destop-bg.png);
+    background:url(images/waves.png);
     background-size: cover;
 }
 
@@ -123,13 +129,13 @@ body{
 
 }
 
-#athlete-mobile{
+#shoe-mobile{
     display:none;
 }
 
 #brand-logo{
     display: block;
-    margin:30px 30px 100px;
+    margin:60px 30px 100px;
 }
 
 .text-container{
@@ -138,9 +144,9 @@ body{
 
 .desktop-image{
     display:block;
-    width:50%;
-    background:url(images/athlete-big.webp);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 35% 100%);
+    width:45%;
+    background:url(images/shoes.png);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     background-size: cover;
 }
 
